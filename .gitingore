@@ -1,0 +1,8 @@
+__pycache__/
+*.pkl
+*.joblib
+*.pyc
+.env
+.venv/
+runs_overlock_light/__pycache__/
+.DS_Store
