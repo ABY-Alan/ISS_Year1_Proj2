@@ -183,7 +183,7 @@ class PointFrameDataset(Dataset):
                 arr = self._translate(arr)
             if np.random.rand() < 0.5:
                 arr = self._jitter(arr)
-        y = self.y[idx]
+        y = self.y[idx]  # type: ignore
         # PyTorch expects (C,N); we use (N,C) then permute later in model
         return arr, y
 
